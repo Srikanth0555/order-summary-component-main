@@ -3,31 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
-    <title>AstraAim Technologies | Order summary card</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <title>ORDER SUMMARY COMPONENT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
-    Order Summary You can now listen to millions of songs, audiobooks, and
-    podcasts on any device anywhere you like! Annual Plan $59.99/year Change
-    Proceed to Payment Cancel Order
+    <section class="order-summary-wrapper">
+      <img class="illustration" src="images\illustration-hero.svg" alt="guy with headphones" />
+      <div class="order-summary-content">
+        <h1>Order Summary</h1>
+        <p class="para-content">
+          You can now listen to millions of songs, audiobooks, and podcasts on
+          any device anywhere you like!
+        </p>
+        <section class="price">
+          <div class="row-content">
+            <img src= "images\icon-music.svg">
+            <article>
+              <h2>Annual Plan</h2>
+              <p>$59.99/year</p>
+            </article>
+          </div>
+          <a class="fw-700 change-link" href="order-summary.html">Change</a>
+        </section>
+        <section class="button-section">
+          <a class="proceed-button fw-700" href="order-summary.html"
+            >Proceed to Payment</a
+          >
+          <a class="cancel-button fw-700" href="order-summary.html"
+            >Cancel Order</a
+          >
+        </section>
+      </div>
+    </section>
   </body>
 </html>
